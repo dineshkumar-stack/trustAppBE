@@ -13,7 +13,7 @@ addBloodDonationFrom = async (req, res) => {
   try {
     const addBD = new BloodDonation(req.body);
     addBD.save().then((result) => {
-      console.log("POST_Blood Donors Info Added");
+      console.log(`POST_Blood Donors Info ${addBD.name} added id ${addBD.id}`);
       res.status(201).json({ message: "----- addBD Created ------" });
     });
   } catch (erro) {
