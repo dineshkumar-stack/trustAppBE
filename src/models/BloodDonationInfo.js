@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const donationSchema = new mongoose.Schema({
     name: String,
     bloodType: String,
-    contact: String,
+    contact: Number,
     age: Number,
     weight: Number,
     gender: String,
